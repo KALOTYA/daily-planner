@@ -6,7 +6,7 @@ $(function () {
   var workHours = 9;
   var endHour = 17;
   var currentHour = dayjs().hour();
-  var container = $("#timeBlocks")
+  var container = $(".container-fluid")
 
   for (var i = workHours; i <= endHour; i++) {
     var hour = i < 12 ? i + "AM" : i === 12 ? "12PM" : (i - 12) + "PM";
