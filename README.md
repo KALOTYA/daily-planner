@@ -1,36 +1,32 @@
-# JavaScript Code Quiz
+# Daily Planner
 
-This project is a JavaScript Coding Quiz Game that allows you to test how well you understand 
-JavaScript fundamentals. Give it a shot, Play with friends, and see who can get thier name onto the top of that scoreboard!
+This code is a Daily planner that dynamically generates a work day scheduler with time blocks from 9AM to 5PM. Always be on top of your daily tasks with this simple and easy to use daily planner.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
-This Project powers a dynamic quiz game designed to test users' knowledge of programming concepts, particularly focusing on JavaScript. The project aims to provide an interactive and educational experience for users interested in learning or testing their understanding of JavaScript fundamentals. By presenting questions in a quiz format, users can engage with the content in a fun and challenging way.
+Welcome to the Work Day Scheduler! This program provides a simple calendar app designed to help you organize and plan your work day effectively. With dynamic time blocks that change color based on the current time, you can easily visualize your schedule at a glance. The scheduler allows you to input and save tasks for each hour, ensuring that you stay on top of your daily workload. Powered by JavaScript, jQuery, Bootstrap, and Day.js, this scheduler offers a user-friendly interface and efficient task management features. Start optimizing your productivity today with the Work Day Scheduler!
 
 ## Features
 
 List the key features or functionalities of your project.
 
-- Quiz Questions Array
-- Interactive Interface Utilizing HTML & CSS
-- Dynamic Question Display
-- Answer Validation
-- Timer Functionality
-- Score TRacking
-- Highscore Submission
+- Third-party Library Integration
+- Dynamic Time Block Generation
+- Color-coded Time Blocks
+- Automatic Date Display
 - Responsive Design Utilizing Bootstrap
-- Educational Tool
-- Self-Assesment
-- Retake Option
+- Interactive Interface Utilizing HTML & CSS
+- User Input Handling
+- Task Input and Saving
+- User-Friendly Interface
+- Local Storage
+- Efficient Task Management
 - Clean Code Structure 
 
 ## Installation
