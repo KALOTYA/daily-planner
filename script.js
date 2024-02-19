@@ -8,7 +8,17 @@ $(function () {
     var currentHour = day.js().hour();
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
-    })
+
+      $(this).removeClass('past present future')
+
+      if (blockHour < currentHour) {
+        $(this).addClass("past");
+      } else if (blockHour === currentHour) {
+        $(this).addClass("present");
+      } else {
+        $(this).addClass("future");
+      }
+    });
   }
   
   
