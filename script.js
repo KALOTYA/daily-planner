@@ -33,6 +33,7 @@ $(function () {
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
 
+      //$(this).removeClass('past present future');
 
       if (blockHour < currentHour) {
         $(this).addClass("past");
@@ -63,7 +64,7 @@ $(function () {
 
       var userInput = localStorage.getItem(blockId);
 
-      $(this).find(".descriptionEl").val(userInput);
+      $(this).find("textarea").val(userInput);
 
     });
   }
@@ -71,10 +72,11 @@ $(function () {
 
   $("#currentDay").text(dayjs().format("dddd, MMMM D"));
 
-  setInterval(updateTimeBlocks, 60000);
-
+  generateTimeBlocks();
   updateTimeBlocks();
   loadUserInput();
+  
+  setInterval(updateTimeBlocks, 60000);
 
 });
 
