@@ -35,7 +35,7 @@ List the key features or functionalities of your project.
 
 How to use:
  - Just use the deployed link:
- https://kalotya.github.io/code-quiz/
+ https://kalotya.github.io/daily-planner/
  
 
 
