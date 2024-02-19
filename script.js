@@ -3,6 +3,17 @@
 // in the html.
 $(function () {
     
+  function updateTimeBlocks() {
+    //getting the curren thour using day.js
+    var currentHour = day.js().hour();
+    $(".time-block").each(function () {
+      var blockHour = parseInt($(this).attr("id").split("-")[1]);
+    })
+  }
+  
+  
+  
+  
   $(".saveBtn").on("click", function () {
     var descriptionEl = $(this).siblings(".descriptionEl").val();
 
