@@ -29,6 +29,8 @@ List the key features or functionalities of your project.
 - Efficient Task Management
 - Clean Code Structure 
 
+![Alt Text](Daily-planner-demo.gif)
+
 ## Installation
 
 How to use:
