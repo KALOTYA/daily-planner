@@ -3,14 +3,18 @@
 // in the html.
 $(function () {
     
+  var workHours = 9;
+  var endHour = 17;
+  var currentHour = dayjs().hour();
+  var container = $("#timeBlocks")
+  
   function updateTimeBlocks() {
     //getting the curren thour using day.js
     var currentHour = dayjs().hour();
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
 
-      $(this).removeClass('past present future')
-
+      
       if (blockHour < currentHour) {
         $(this).addClass("past");
       } else if (blockHour === currentHour) {
