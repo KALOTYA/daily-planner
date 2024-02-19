@@ -33,7 +33,15 @@ $(function () {
   });
   
   
-  
+  function loadUserInput() {
+    $(".time-block").each(function () {
+
+      var blockId = $(this).attr("id");
+
+      var userInput = localStorage.getItem(blockId);
+      
+    })
+  }
   
   
   // TODO: Add a listener for click events on the save button. This code should
