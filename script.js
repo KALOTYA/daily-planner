@@ -33,7 +33,7 @@ $(function () {
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
 
-      //$(this).removeClass('past present future');
+      $(this).removeClass('past present future');
 
       if (blockHour < currentHour) {
         $(this).addClass("past");
@@ -46,15 +46,6 @@ $(function () {
   }
 
 
-
-
-  $(".saveBtn").on("click", function () {
-    var descriptionEl = $(this).siblings(".descriptionEl").val();
-
-    var blockId = $(this).parent().attr("id");
-
-    localStorage.setItem(blockId, descriptionEl);
-  });
 
 
   function loadUserInput() {
@@ -72,11 +63,19 @@ $(function () {
 
   $("#currentDay").text(dayjs().format("dddd, MMMM D"));
 
-  generateTimeBlocks();
+ 
   updateTimeBlocks();
   loadUserInput();
-  
+
   setInterval(updateTimeBlocks, 60000);
+
+  $(".saveBtn").on("click", function () {
+    var description = $(this).siblings("textarea").val();
+
+    var blockId = $(this).parent().attr("id");
+
+    localStorage.setItem(blockId, description);
+  });  
 
 });
 
