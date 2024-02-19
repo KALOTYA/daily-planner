@@ -5,7 +5,7 @@ $(function () {
     
   function updateTimeBlocks() {
     //getting the curren thour using day.js
-    var currentHour = day.js().hour();
+    var currentHour = dayjs().hour();
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
 
@@ -46,7 +46,7 @@ $(function () {
   }
   
   
-  $("#currentDay").text(day.js().format("dddd, MMMM D"));
+  $("#currentDay").text(dayjs().format("dddd, MMMM D"));
 
     setInterval(updateTimeBlocks, 60000);
 
