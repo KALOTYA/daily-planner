@@ -32,7 +32,7 @@ $(function () {
     var currentHour = dayjs().hour();
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
-      console.log("block hour: ", blockHour);
+      
 
       $(this).removeClass('past present future');
 
@@ -62,7 +62,7 @@ $(function () {
   }
 
 
-  $("#currentDay").text(dayjs().format("dddd, MMMM D"));
+  $("#currentDay").text(dayjs().format("dddd, MMMM D")).addClass("text-center");
 
  
   updateTimeBlocks();
@@ -76,6 +76,7 @@ $(function () {
     var blockId = $(this).parent().attr("id");
 
     localStorage.setItem(blockId, description);
+    console.log("Event has been saved")
   });  
 
 });
